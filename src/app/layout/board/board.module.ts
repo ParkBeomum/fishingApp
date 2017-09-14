@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BoardRoutingModule } from './board-routing.module';
 import { BoardComponent } from './board.component';
 //import { PageHeaderModule } from './../../shared';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @NgModule({
     imports: [
@@ -11,6 +12,9 @@ import { BoardComponent } from './board.component';
         BoardRoutingModule,
 //        PageHeaderModule
     ],
-    declarations: [BoardComponent]
+    declarations: [
+      BoardComponent,
+      CarouselComponent
+    ]
 })
 export class BoardModule { }

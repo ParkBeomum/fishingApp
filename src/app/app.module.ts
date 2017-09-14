@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
-import { BoardService } from './services/board.service'
+import { BoardService } from './services/board.service';
+
 
 @NgModule({
   declarations: [
