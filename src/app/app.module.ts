@@ -4,17 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+import { BoardService } from './services/board.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    Angular2FontawesomeModule
   ],
-  providers: [],
+  providers: [BoardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
