@@ -1,3 +1,66 @@
-h1{
-  text-align:center;
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+a{
+  text-decoration: none;
+}
+
+h1 {
+    height:50px;
+    font-family: 'Hanna', serif;
+    -webkit-transition-property: font-size;
+    -moz-transition-property: font-size;
+    transition-property: font-size;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -moz-transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing function: linear, ease-in;
+    -moz-transition-timing function: linear, ease-in;
+    transition-timing function: linear, ease-in;
+    text-align:center;
+    color:#2B2B2B;
+    background-color:#D3E9E7;
+}
+
+h1 a:hover { text-decoration: none; color: #27B3CF; }
+
+h2 { font-family: 'Helvetica'; font-size: 18px; padding: 10px;
+    -webkit-transition-property: font-size;
+    -moz-transition-property: font-size;
+    transition-property: font-size;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -moz-transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing function: linear, ease-in;
+    -moz-transition-timing function: linear, ease-in;
+    transition-timing function: linear, ease-in;
+}
+
+header {
+    top:0px;
+    width:100%;
+    color:white;
+
+    text-align:center;
+}
+
+header > h1 {
+    display:none;
+    margin:auto;
+    line-height:51px;
+    vertical-align:middle;
+}
+
+header > h1 > a{
+    color:#3A3A3B;
+}
+
+/* custom media query  */
+@media only screen and (min-width:960px){
+  header h1{
+    display:block;
+  }
+
 }

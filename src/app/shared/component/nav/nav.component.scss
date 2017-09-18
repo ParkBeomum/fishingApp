@@ -1,4 +1,35 @@
 @import "./css/normalize.min";
 @import "./css/defaults.min";
 @import "./css/nav-core.min";
-@import "./css/nav-layout.min";
+@import "./css/nav-layout";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+/* custom css */
+nav{
+  background-color:red;
+}
+header{
+  display:block;
+}
+
+.nav > ul {
+  text-align:center;
+}
+
+a{
+  font-family: 'Jeju Gothic', serif;
+}
+
+.nav li {
+  width: 100%;
+}
+/* custom */
+@media only screen and (min-width:960px){
+  header{
+    display:none;
+  }
+  .nav li {
+    width: 130px;
+  }
+}
