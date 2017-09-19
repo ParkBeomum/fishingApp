@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 import { BoardService } from './services/board.service';
-import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,6 @@ import { AlertModule } from 'ngx-bootstrap';
     HttpModule,
     AppRoutingModule,
     Angular2FontawesomeModule,
-    AlertModule.forRoot(),
-
   ],
   providers: [BoardService],
   bootstrap: [AppComponent]

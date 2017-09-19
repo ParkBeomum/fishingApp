@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "icon-font";
-	src: url('assets/fonts/icon-font.eot');
-	src: url('assets/fonts/icon-font.eot?#iefix') format('eot'), url('assets/fonts/icon-font.woff') format('woff'), url('assets/fonts/icon-font.ttf') format('truetype'), url('assets/fonts/icon-font.svg#icon-font') format('svg');
+	src: url('../../../../assets/fonts/icon-font.eot'	);
+	src: url('../../../../assets/fonts/icon-font.eot?#iefix') format('eot'), url('../../../../assets/fonts/icon-font.woff') format('woff'), url('../../../../assets/fonts/icon-font.ttf') format('truetype'), url('../../../../assets/fonts/icon-font.svg#icon-font') format('svg');
 }
 
 .icon-desktop:before,
