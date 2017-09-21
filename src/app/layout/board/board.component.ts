@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BoardService } from '../../services/board.service';
-//import our Carousel Component
-import {CarouselComponent} from '../carousel/carousel.component';
-
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'app-board',
@@ -11,13 +9,21 @@ import {CarouselComponent} from '../carousel/carousel.component';
 })
 export class BoardComponent implements OnInit {
 
-  boards: any = [];
-  constructor(private boardService:BoardService) { }
-
+  public data: any[];
+  //constructor(private boardService:BoardService) { }
+  constructor(private http:Http) { }
   ngOnInit() {
     //Retrive board from the API
+    /*
     this.boardService.getAllPosts().subscribe(boards => {
       this.boards = boards;
+    });
+    */
+    this.http.get("./layout/board/data.json")
+    .subscribe((data)=> {
+        setTimeout(()=> {
+            this.data = data.json();
+        }, 2000);
     });
   }
 

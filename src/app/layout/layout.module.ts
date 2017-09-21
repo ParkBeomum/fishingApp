@@ -14,7 +14,7 @@ import { NavComponent, HeaderComponent } from '../shared';
         CommonModule,
 
 //        NgbDropdownModule.forRoot(),
-        LayoutRoutingModule,
+        LayoutRoutingModule, 
 //        TranslateModule
     ],
     /* 이모듈에 속한 view class */
